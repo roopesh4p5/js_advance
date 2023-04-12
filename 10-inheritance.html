@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    this is working
+    <script>
+      class employee{
+        constructor(name,age){
+            this.name=name;
+            this.age=age;
+        }
+        info(){
+            document.write(`name ${this.name}`)
+        }
+      }    
+      class manager extends employee{
+         disp(){
+            document.write("this is disp")
+            super.info();
+         }
+      }
+ let a = new manager("roopesh",20);
+  a.info();  //info method is in the main class
+
+  a.disp();
+    </script>
+</body>
+</html>

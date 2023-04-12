@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    difference between let var and const <br>
+
+    <script>
+        //var    it is a global scope
+        var x = 20;
+        document.write(x)
+        var x=30;  //can be redeclared
+        document.write(x)
+        x=40;   //but can be updated
+        document.write(x)
+
+
+        let a=20;  //let is a block scope
+        document.write(a)
+        //let a=30;  //cant be redeclared 
+        document.write(a)
+        x=40    // can be updated
+        document.write(a)
+
+        const b =20   //const is also a block scope
+        document.write(b)
+        //const cant be redeclared or changed
+
+
+    </script>
+    
+</body>
+</html>
